@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#totem {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#menu {
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+#produtos {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#carrinho {
+  background: #eee;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
